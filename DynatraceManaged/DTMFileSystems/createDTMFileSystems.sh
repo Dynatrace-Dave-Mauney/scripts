@@ -1,14 +1,16 @@
 #createDTMFileSystems.sh
 
 #Safety Section
-echo "WARNING:  Any existing data in the "dtm1" logical volume will be destroyed..."
-echo "Remove this "Safety Section" to and rerun the script to invoke the extremely dangerous commands that follow..."
-echo "Exiting for safety reasons..."
+echo WARNING:  Any existing data in the "dtm1" logical volume will be destroyed...
+echo Remove this "Safety Section" to and rerun the script to invoke the extremely dangerous commands that follow...
+echo Exiting for safety reasons...
 exit
 
+#
 #Create File Systems
+#
 
-Create Logical Volumes
+#Create Logical Volumes
 yes|lvcreate -n opt+managed -L 7g dtm1
 yes|lvcreate -n data -L 25g dtm1
 yes|lvcreate -n data+log -L 2g dtm1
