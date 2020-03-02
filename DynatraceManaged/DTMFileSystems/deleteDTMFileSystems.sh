@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #deleteDTMFileSystems.sh
 
 #Safety Section

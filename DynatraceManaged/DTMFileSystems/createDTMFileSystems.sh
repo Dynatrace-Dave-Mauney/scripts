@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #createDTMFileSystems.sh
 
 #Safety Section
